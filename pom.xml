@@ -121,6 +121,16 @@
                 <packaging.type>jar</packaging.type>
             </properties>
         </profile>
+        <profile>
+            <id>docker-dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <activatedProperties>docker-dev</activatedProperties>
+                <packaging.type>jar</packaging.type>
+            </properties>
+        </profile>
         <!--prod profile is intended for dockerized deployment of LS. (LS in container, DB in container)-->
         <profile>
             <id>prod</id>
